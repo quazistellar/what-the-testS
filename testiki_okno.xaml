@@ -1,0 +1,39 @@
+﻿<Window x:Class="testiki_wpf.testiki_okno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:testiki_wpf"
+        mc:Ignorable="d"
+        Title="testiki_okno" Height="450" Width="800" Background="#ca4b5d" Icon="ico17.png">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="267*"/>
+                <ColumnDefinition Width="248*"/>
+                <ColumnDefinition Width="18*"/>
+                <ColumnDefinition Width="267*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="proiti_test" Content="пройти тест" Background="#FF4BCAB7" FontSize="18" FontFamily="Arial Black" Grid.Column="3" Click="proiti_test_Click"/>
+            <Button x:Name="creatorTest" Content="редактировать" Background="#FF4BCAB7" FontFamily="Arial Black" FontSize="18" Grid.Column="1" Grid.ColumnSpan="2" Click="creatorTest_Click"/>
+            <Button x:Name="exit_2" Content="выйти" Background="#FF4BCAB7" FontSize="18" FontFamily="Arial Black" Click="exit_2_Click"/>
+
+        </Grid>
+        <Frame x:Name="pages" NavigationUIVisibility="Hidden" Margin="55,42,55,41" Grid.Row="1"/>
+
+    </Grid>
+</Window>
